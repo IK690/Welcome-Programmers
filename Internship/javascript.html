@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript work </title>
+    <link rel="stylesheet" href="style/css">
+    <style>
+        body{
+            background-color: aliceblue;
+            box-shadow: 25px;
+            background-image: url(./);
+            background-repeat: no-repeat;
+        }
+       
+        form{
+            background-color: maroon;
+            margin-left: -20px;
+            width: 40%;
+            height: 50vh;
+            padding: 40px;
+            border-radius: 12px;
+            top: 140px;
+            position: relative;
+        }
+    </style>
+    <script>
+        function generateFibonacciSequence() {
+            let sequence = [1, 1];
+            for (let i = 2; i < 9; i++) {
+                sequence[i] = sequence[i - 1] + sequence[i - 2];
+            }
+            return sequence.join(', ');
+        }
+        function generateSequence2() {
+            let sequence = [];
+            for (let i = 5; i <= 19; i += 2) {
+                sequence.push(i);
+            }
+            return sequence.join(', ');
+        }
+        function generateSequence3() {
+            let sequence = [];
+            for (let i = 12; i <= 28; i += 2) {
+                sequence.push(i);
+            }
+            return sequence.join(', ');
+        }
+        function displaySequences() {
+            document.getElementById('leftfield').value = generateFibonacciSequence();
+            document.getElementById('rightfield').value = generateSequence2();
+            document.getElementById('bottomfield').value = generateSequence3();
+        }
+    </script>
+</head>
+<body onload="displaySequences()">
+    <center>
+        <form >
+            <label style="font-family: sans-serif;font-size: 20px;font-weight: 200;color: white;text-align: start;">Left Field:</label>
+            <input type="text" id="leftfield" readonly><br><br><br><br>
+            
+            <label style="font-family: sans-serif;font-size: 20px;font-weight: 200;color: white;text-align: start">Right Field:</label>
+            <input type="text" id="rightfield" style="width: 160px;" readonly><br><br><br><br>
+            
+            <label style="font-family: sans-serif;font-size: 20px;font-weight: 200;color: white;text-align: start">Bottom Field:</label>
+            <input type="text" id="bottomfield" style="width: 148px;" readonly><br>
+        </form>
+    </center>
+</body>
+</html>

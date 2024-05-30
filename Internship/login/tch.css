@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.signup{
+    width: 45%;
+    height: 110vh;
+    background-color: #1B204D;
+    border-radius: 25px;
+    position: relative;
+    left: 300px;
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Popup</title>
+<style>
+    /* Style for the popup container */
+    .popup-container {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        padding: 20px;
+        border: 2px solid #333333;
+        border-radius: 8px;
+        z-index: 1000;
+    }
+    
+    /* Style for the overlay */
+    .overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+    }
+    #close{
+        color: black;
+        font-size: 30px;
+        font-weight: 800;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+
+<button onclick="openPopup()">Open Popup</button>
+
+<!-- Popup container -->
+<div id="popup" class="popup-container">
+    <span style="float: right;" id="close">&times;</span>
+    <h2>This is a Popup</h2>
+    <p>Click outside the popup to close.</p>
+</div>
+<!-- Overlay -->
+<div id="overlay" class="overlay"></div>
+
+<script>
+    // Function to open the popup
+    function openPopup() {
+        document.getElementById("popup").style.display = "block";
+        document.getElementById("overlay").style.display = "block";
+        document.getElementById("close").style.display ="block";
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        document.getElementById("overlay").style.display = "none";
+        document.getElementById("close").style.display ="none";
+    }
+
+    // Close the popup when clicking outside of it
+    document.getElementById("overlay").addEventListener("click", function() {
+        closePopup();
+    });
+    document.getElementById("close").addEventListener("click", function(){
+        closePopup();
+    });
+</script>
+
+</body>
+</html>

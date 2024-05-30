@@ -1,0 +1,144 @@
+<center>
+        <div id="three">
+            <div class="table">
+                <h1 style="font-weight: bold;">Food List</h1>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6 text-left">
+                            <button style="background-color: rgb(59, 58, 58);padding: 10px;color: white;border-radius: 5px;border: none;">Add Recipe</button>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <input type="search" id="search" name="search" placeholder="Search..." style="padding: 10px;border: none;border-radius: 10px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table style="width: 90%;">
+                                <th>
+                                    <tr>
+                                        <th colspan="1">Food ID</th>
+                                        <th colspan="1">Recipe Image</th>
+                                        <th colspan="1">Recipe Name</th>
+                                        <th colspan="1">Category</th>
+                                        <th colspan="3">Action</th>
+                                    </tr>
+                                </th>
+                                <tr>
+                                    <td>1</td>
+                                    <td>
+                                        <img src="doo.jpg" style="width: 60px;">
+                                    </td>
+                                    <td>French Toast</td>
+                                    <td>Breakfast</td>
+                                    <td><button><i class="fa fa-list" aria-hidden="true"></i></button></td>
+                                    <td><button>1</button></td>
+                                    <td><button>1</button></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>
+                                        <img src="doo.jpg" style="width: 60px;">
+                                    </td>
+                                    <td>Croque Madame</td>
+                                    <td>Breakfast</td>
+                                    <td><button><i class="fa fa-list" aria-hidden="true"></i></button></td>
+                                    <td><button>1</button></td>
+                                    <td><button>1</button></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>
+                                        <img src="doo.jpg" style="width: 60px;">
+                                    </td>
+                                    <td>Egg Bhurji</td>
+                                    <td>Breakfast</td>
+                                    <td><button><i class="fa fa-list" aria-hidden="true"></i></button></td>
+                                    <td><button>1</button></td>
+                                    <td><button>1</button></td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>
+                                        <img src="doo.jpg" style="width: 60px;">
+                                    </td>
+                                    <td>Eggs Benedict Toast</td>
+                                    <td>Breakfast</td>
+                                    <td><button><i class="fa fa-list" aria-hidden="true"></i></button></td>
+                                    <td><button>1</button></td>
+                                    <td><button>1</button></td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>
+                                        <img src="doo.jpg" style="width: 60px;">
+                                    </td>
+                                    <td>Cinnamon Pancakes</td>
+                                    <td>Breakfast</td>
+                                    <td><button><i class="fa fa-list" aria-hidden="true"></i></button></td>
+                                    <td><button>1</button></td>
+                                    <td><button>1</button></td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>
+                                        <img src="doo.jpg" style="width: 60px;">
+                                    </td>
+                                    <td>Katsu Sando</td>
+                                    <td>Breakfast</td>
+                                    <td><button><i class="fa fa-list" aria-hidden="true"></i></button></td>
+                                    <td><button>1</button></td>
+                                    <td><button>1</button></td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>
+                                        <img src="doo.jpg" style="width: 60px;">
+                                    </td>
+                                    <td>Eggs Benedict Toast</td>
+                                    <td>Breakfast</td>
+                                    <td><button><i class="fa fa-list" aria-hidden="true"></i></button></td>
+                                    <td><button>1</button></td>
+                                    <td><button>1</button></td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>
+                                        <img src="doo.jpg" style="width: 60px;">
+                                    </td>
+                                    <td>Croque Madame</td>
+                                    <td>Breakfast</td>
+                                    <td><button><i class="fa fa-list" aria-hidden="true"></i></button></td>
+                                    <td><button>1</button></td>
+                                    <td><button>1</button></td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>
+                                        <img src="doo.jpg" style="width: 60px;">
+                                    </td>
+                                    <td>French Toast</td>
+                                    <td>Breakfast</td>
+                                    <td><button><i class="fa fa-list" aria-hidden="true"></i></button></td>
+                                    <td><button>1</button></td>
+                                    <td><button>1</button></td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>
+                                        <img src="doo.jpg" style="width: 60px;">
+                                    </td>
+                                    <td>Special Omelet</td>
+                                    <td>Breakfast</td>
+                                    <td><button style="background-color: transparent;border: none;"><i class="fa fa-list" aria-hidden="true" style="font-size: 40px;color: black;"></i></button></td>
+                                    <td><button>1</button></td>
+                                    <td><button>1</button></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>

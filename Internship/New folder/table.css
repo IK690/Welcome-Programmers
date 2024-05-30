@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.main{
+    width: auto;
+    height: 20vh;
+    background-color: transparent;
+    align-items: center;
+    border: 1 solid black;
+    margin: 0px 0 0 700px;
+}
+.header{
+    padding: 0 20px 0 10px;
+}
+td{
+    padding: 0 10px 0 10px;
+}
+tr{
+    padding: 0 10px 0 10px;
+}
+th{
+    background-color: black;
+    color: white;
+}
+td,th{
+    border-bottom: 1px solid #d3d3d3;
+}

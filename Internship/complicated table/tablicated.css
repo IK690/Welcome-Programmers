@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+table{
+    padding: 10px;
+    width: 40%;
+}
+th, td {
+    border: none;
+    border-radius: 10px;
+}

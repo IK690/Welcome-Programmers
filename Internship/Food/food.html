@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="food.css">
+    <title>My Food Recipe</title>
+</head>
+<body style="background-color: gray;">
+    <div class="container-fluid text-center" style="position: fixed;top: 0;">                                                                                                       
+        <div class="row">
+            <div class="col-sm-12" style="background-color: black;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h3 style="padding: 15px 10px 10px 10px;color: white;">My Food Recipe</h3>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul style="list-style: none;">
+                                <li><a href="#one">Home</a></li>
+                                <li><a href="#two">Food Categories</a></li>
+                                <li><a href="#three">Food List</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-2"></div>
+                        <div class="col-sm-2 text-left" style="padding: 20px;">
+                            <div class="dropdown">
+                                <button>My Account</button>
+                                <div class="dropdown-content">
+                                    <a href="#" style="border-radius: 10px 10px 0 0;">View Account</a>
+                                    <a href="#" style="border-radius: 0 0 10px 10px;">Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <center>
+        <div id="one">
+            <div class="box">
+                <img src="doo.jpg" style="width: 100%;">
+                <h2 style="padding: 10px;font-weight: bold;">Ingredients List</h2>
+                <h5 style="padding: 0 10px 10px 10px;">This should be detailed and include important information to tell the user how much of each Ingredients they should be consuming</h5>
+            </div>
+            <div class="box">
+                <img src="tak.jfif" style="width: 100%;">
+                <h2 style="padding: 10px;font-weight: bold;">Food List</h2>
+                <h5 style="padding: 0 10px 10px 10px;">This should be detailed and include important information to tell the user how much of each Ingredients they should be consuming</h5>
+            </div>
+            <div class="box">
+                <img src="doo.jpg" style="width: 100%;">
+                <h2 style="padding: 10px;font-weight: bold;">Procedures</h2>
+                <h5 style="padding: 0 10px 10px 10px;">This should be detailed and include important information to tell the user how much of each Ingredients they should be consuming</h5>
+            </div>
+        </div>
+    </center>
+    <center>
+        <div id="two">
+            <div class="box1">
+                <img src="tak.jfif" style="width: 100%;">
+                <h2 style="padding: 10px;font-weight: bold;">Breakfast Recipes</h2>
+                <button style="padding: 10px 100px;border: none;border-radius: 5px;color: white;background-color: black;font-weight: 500;" onclick="openPopup()">View List</button>
+            </div>
+            <div id="popup" class="popup-container" style="width: 600px;height: 38vh;">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <h2>Courses</h2>
+                            <img src="doo.jpg" style="width: 100px;">
+                            <p style="font: italic;color: lightblue;">Breakfast course</p> 
+                        </div>
+                        <div class="col-sm-4">
+                            <img src="doo.jpg" style="width: 100px;margin-top: 47px;">
+                            <p style="font: italic;color: lightblue;">Breakfast course</p> 
+                        </div>
+                        <div class="col-sm-4">
+                            <span style="float: right;" id="close">&times;</span>
+                            <img src="doo.jpg" style="width: 100px;margin-top: 47px;">
+                            <p style="font: italic;color: lightblue;">Breakfast course</p>
+                            <button style="background-color: rgb(49, 49, 49);border: none;border-radius: 10px;padding: 5px 10px;color: white;float: right;" onclick="closePopup()">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay" class="overlay"></div>
+            <div class="box2">
+                <img src="doo.jpg" style="width: 100%;">
+                <h2 style="padding: 10px;font-weight: bold;">Lunch Recipes</h2>
+                <button style="padding: 10px 100px;border: none;border-radius: 5px;color: white;background-color: black;font-weight: 500;" onclick="openPopup()">View List</button>
+            </div>
+            <div class="box3">
+                <img src="doo.jpg" style="width: 100%;">
+                <h2 style="padding: 10px;font-weight: bold;">Dinner Recipes</h2>
+                <button style="padding: 10px 100px;border: none;border-radius: 5px;color: white;background-color: black;font-weight: 500;" onclick="openPopup()">View List</button>
+            </div>
+            <div class="box1">
+                <img src="tak.jfif" style="width: 100%;">
+                <h2 style="padding: 10px;font-weight: bold;">Appetizer Recipes</h2>
+                <button style="padding: 10px 100px;border: none;border-radius: 5px;color: white;background-color: black;font-weight: 500;" onclick="openPopup()">View List</button>
+            </div>
+            <div class="box2">
+                <img src="doo.jpg" style="width: 100%;">
+                <h2 style="padding: 10px;font-weight: bold;">Dessert Recipes</h2>
+                <button style="padding: 10px 100px;border: none;border-radius: 5px;color: white;background-color: black;font-weight: 500;" onclick="openPopup()">View List</button>
+            </div>
+            <div class="box3">
+                <img src="doo.jpg" style="width: 100%;">
+                <h2 style="padding: 10px;font-weight: bold;">Fast Food Recipes</h2>
+                <button style="padding: 10px 100px;border: none;border-radius: 5px;color: white;background-color: black;font-weight: 500;" onclick="openPopup()">View List</button>
+            </div>
+        </div>
+    </center>
+    <center>
+        <div id="three">
+            <div class="table">
+                <h1 style="font-weight: bold;">Food List</h1>
+                <button style="background-color: rgb(59, 58, 58);padding: 10px;color: white;border-radius: 5px;border: none;float: left;margin-left: 10px;">Add Recipe</button>
+                <input type="search" id="search" name="search" placeholder="Search..." style="padding: 10px;border: none;border-radius: 10px;float: right;margin-right: 10px;">
+                <table style="width: 90%;">
+                    <th>
+                        <tr>
+                            <th colspan="1">Food ID</th>
+                            <th colspan="1">Recipe Image</th>
+                            <th colspan="1">Recipe Name</th>
+                            <th colspan="1">Category</th>
+                            <th colspan="3">Action</th>
+                        </tr>
+                    </th>
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <img src="doo.jpg" style="width: 60px;">
+                        </td>
+                        <td>French Toast</td>
+                        <td>Breakfast</td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa fa-list" aria-hidden="true" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-pen" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-trash" style="font-size: 20px;color: black;"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <img src="tak.jfif" style="width: 60px;">
+                        </td>
+                        <td>Croque Madame</td>
+                        <td>Breakfast</td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa fa-list" aria-hidden="true" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-pen" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-trash" style="font-size: 20px;color: black;"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <img src="doo.jpg" style="width: 60px;">
+                        </td>
+                        <td>Egg Bhurji</td>
+                        <td>Breakfast</td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa fa-list" aria-hidden="true" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-pen" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-trash" style="font-size: 20px;color: black;"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <img src="tak.jfif" style="width: 60px;">
+                        </td>
+                        <td>Eggs Benedict Toast</td>
+                        <td>Breakfast</td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa fa-list" aria-hidden="true" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-pen" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-trash" style="font-size: 20px;color: black;"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <img src="doo.jpg" style="width: 60px;">
+                        </td>
+                        <td>Cinnamon Pancakes</td>
+                        <td>Breakfast</td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa fa-list" aria-hidden="true" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-pen" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-trash" style="font-size: 20px;color: black;"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>
+                            <img src="tak.jfif" style="width: 60px;">
+                        </td>
+                        <td>Katsu Sando</td>
+                        <td>Breakfast</td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa fa-list" aria-hidden="true" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-pen" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-trash" style="font-size: 20px;color: black;"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>
+                            <img src="doo.jpg" style="width: 60px;">
+                        </td>
+                        <td>Eggs Benedict Toast</td>
+                        <td>Breakfast</td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa fa-list" aria-hidden="true" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-pen" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-trash" style="font-size: 20px;color: black;"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>
+                            <img src="tak.jfif" style="width: 60px;">
+                        </td>
+                        <td>Croque Madame</td>
+                        <td>Breakfast</td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa fa-list" aria-hidden="true" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-pen" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-trash" style="font-size: 20px;color: black;"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>
+                            <img src="doo.jpg" style="width: 60px;">
+                        </td>
+                        <td>French Toast</td>
+                        <td>Breakfast</td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa fa-list" aria-hidden="true" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-pen" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-trash" style="font-size: 20px;color: black;"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>
+                            <img src="tak.jfif" style="width: 60px;">
+                        </td>
+                        <td>Special Omelet</td>
+                        <td>Breakfast</td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa fa-list" aria-hidden="true" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-pen" style="font-size: 20px;color: black;"></i></button></td>
+                        <td><button style="background-color: transparent;border: none;" onclick="openPopup()"><i class="fa-solid fa-trash" style="font-size: 20px;color: black;"></i></button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </center>
+    <script>
+        function openPopup() {
+            document.getElementById("popup").style.display = "block";
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("close").style.display ="block";
+        }
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("close").style.display ="none";
+        }
+        document.getElementById("overlay").addEventListener("click", function() {
+            closePopup();
+        });
+        document.getElementById("close").addEventListener("click", function(){
+            closePopup();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Sequences</title>
+    <script>
+        function generateFibonacciSequence() {
+            let sequence = [1, 1];
+            for (let i = 2; i < 8; i++) {
+                sequence[i] = sequence[i - 1] + sequence[i - 2];
+            }
+            return sequence.join(', ');
+        }
+        function generateSequence2() {
+            let sequence = [];
+            for (let i = 5; i <= 13; i += 2) {
+                sequence.push(i);
+            }
+            return sequence.join(', ');
+        }
+        function generateSequence3() {
+            let sequence = [];
+            for (let i = 12; i <= 20; i += 2) {
+                sequence.push(i);
+            }
+            return sequence.join(', ');
+        }
+        function displaySequences() {
+            document.getElementById('leftfield').value = generateFibonacciSequence();
+            document.getElementById('rightfield').value = generateSequence2();
+            document.getElementById('bottomfield').value = generateSequence3();
+        }
+    </script>
+</head>
+<body onload="displaySequences()">
+    <center>
+        <form style="background-color: maroon;width: 25%;height: 40vh;padding: 30px;border-radius: 10px;top: 130px;position: relative;">
+            <label style="font-family: sans-serif;font-size: 20px;font-weight: 200;color: white;text-align: start;">Left Field:</label>
+            <input type="text" id="leftfield" readonly><br><br><br><br>
+            
+            <label style="font-family: sans-serif;font-size: 20px;font-weight: 200;color: white;text-align: start">Right Field:</label>
+            <input type="text" id="rightfield" style="width: 150px;" readonly><br><br><br><br>
+            
+            <label style="font-family: sans-serif;font-size: 20px;font-weight: 200;color: white;text-align: start">Bottom Field:</label>
+            <input type="text" id="bottomfield" style="width: 135px;" readonly><br>
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+        .header-navbar{
+            position: fixed;
+            top: 0;
+            background-color: black;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .header-navbar a{
+            color: white;
+            text-decoration: none;
+            margin-left: 100px;
+        }
+        .banner,.about-area,.services-area,.portfolio-area,.contact-area{
+            height: 100vh;
+        }
+        #home{
+            background-color: gray;
+        }
+        #About{
+            background-color: darkkhaki;
+        }
+        #Services{
+            background-color: darkorchid;
+        }
+        #Portfolio{
+            background-color: darksalmon;
+        }
+        #Contact{
+            background-color: dodgerblue;
+        }
+        .text-content h2{
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 20%;
+            font-size: 90px;
+            color: white;
+            text-shadow: 0 5px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header-navbar">
+        <a href="#home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Services">Services</a>
+        <a href="#Portfolio">Portfolio</a>
+        <a href="#Contact">Contact</a>
+    </div>
+    <div class="content-area">
+        <div id="home" class="banner">
+            <div class="text-content">
+                <h2>Content</h2>
+            </div>
+        </div>
+        <div id="About" class="about-area">
+            <div class="text-content">
+                <h2>About</h2>
+            </div>
+        </div>
+        <div id="Services" class="services-area">
+            <div class="text-content">
+                <h2>Services</h2>
+            </div>
+        </div>
+        <div id="Portfolio" class="portfolio-area">
+            <div class="text-content">
+                <h2>Portfolio</h2>
+            </div>
+        </div>
+        <div id="Contact" class="contact-area">
+            <div class="text-content">
+                <h2>Contact</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

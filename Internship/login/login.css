@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.pic{
+    width: 100%;
+    height: auto;
+}
+.form{
+    width: 50vh;
+    height: 60vh;
+    background-color: transparent;
+    position: relative;
+    bottom: 650px;
+    left: 500px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+.input{
+    color: white;
+}
